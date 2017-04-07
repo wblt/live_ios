@@ -31,7 +31,9 @@ ijkplayer：是基于FFmpeg的跨平台播放器框架，由B站开发。目前�
 
 将其编译成动态库，参考地址 http://blog.csdn.net/weixin_35755389/article/details/53301278
 
-因为github上传不支持超过100M所有我把这个文件放在百度云盘上 地址：
+因为github上传不支持超过100M所有我把这个文件放在百度云盘上 地址：链接: https://pan.baidu.com/s/1ceoWnc 密码: ufy7
+
+## 将做好的静态库拖进工程中，然后添加依赖库，即可。实现拉流播放，测试的拉流的地址：rtmp://live.hkstv.hk.lxdns.com/live/hks
 
 
 
