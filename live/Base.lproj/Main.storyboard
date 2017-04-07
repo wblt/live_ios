@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gg-tK-1K5">
+                                <rect key="frame" x="123" y="148" width="129" height="30"/>
+                                <state key="normal" title="推流"/>
+                                <connections>
+                                    <action selector="live:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jxA-Hs-w7b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okr-sJ-NMJ">
+                                <rect key="frame" x="123" y="262" width="129" height="30"/>
+                                <state key="normal" title="拉流"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="caf-v8-fhy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8r-qm-n68">
+                                <rect key="frame" x="123" y="376" width="129" height="30"/>
+                                <state key="normal" title="屏幕录制"/>
+                                <connections>
+                                    <action selector="recorder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a5T-dj-q2r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9gg-tK-1K5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="128" id="26O-YT-IC5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="okr-sJ-NMJ" secondAttribute="trailing" constant="107" id="3Mp-id-25N"/>
+                            <constraint firstItem="okr-sJ-NMJ" firstAttribute="top" secondItem="9gg-tK-1K5" secondAttribute="bottom" constant="84" id="79t-T1-aKb"/>
+                            <constraint firstItem="9gg-tK-1K5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="107" id="CUB-JH-ePN"/>
+                            <constraint firstItem="r8r-qm-n68" firstAttribute="top" secondItem="okr-sJ-NMJ" secondAttribute="bottom" constant="84" id="Xj7-Wg-JP7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9gg-tK-1K5" secondAttribute="trailing" constant="107" id="Z9a-iz-kXp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r8r-qm-n68" secondAttribute="trailing" constant="107" id="fMH-Bh-E0f"/>
+                            <constraint firstItem="okr-sJ-NMJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="107" id="mvJ-cm-0A5"/>
+                            <constraint firstItem="r8r-qm-n68" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="107" id="s1M-DC-cQD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="A4B-hI-yzV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
